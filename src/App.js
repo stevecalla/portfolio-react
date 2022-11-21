@@ -17,6 +17,11 @@ function App() {
      
         <Routes>
           <Route 
+            exact path="/portfolio-react/" 
+            element={<About />}
+            // component={About}
+          />
+          <Route 
             exact path="/portfolio-react/about" 
             element={<About />}
             // component={About}
