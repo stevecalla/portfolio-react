@@ -16,11 +16,31 @@ function App() {
       <Header />
      
         <Routes>
-          <Route path="/portfolio-react/about" element={<About/>} />
-          <Route path="/portfolio-react/about" element={<About/>} />
-          <Route path="/portfolio-react/portfolio" element={<Portfolio/>} />
-          <Route path="/portfolio-react/contact" element={<Contact/>} />
-          <Route path="/portfolio-react/resume" element={<Resume/>} />
+          <Route 
+            exact path="/portfolio-react/about" 
+            element={<About />}
+            // component={About}
+          />
+          <Route 
+            exact path="/portfolio-react/portfolio" 
+            element={<Portfolio />}
+            // component={Portfolio}
+          />
+          <Route 
+            exact path="/portfolio-react/contact" 
+            element={<Contact />}
+            // component={Contact}
+          />
+          <Route 
+            exact path="/portfolio-react/resume" 
+            element={<Resume />}
+            // component={Resume}
+          />
+          {/* <Route path="/portfolio-react/about" element={<About />} /> */}
+          {/* <Route path="/portfolio-react/about" element={<About/>} /> */}
+          {/* <Route path="/portfolio-react/portfolio" element={<Portfolio/>} /> */}
+          {/* <Route path="/portfolio-react/contact" element={<Contact/>} /> */}
+          {/* <Route path="/portfolio-react/resume" element={<Resume/>} /> */}
         </Routes>
       <Footer />
       </div>
