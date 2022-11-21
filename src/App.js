@@ -11,46 +11,19 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 function App() {
   return (
-    <Router>
-      <div id="App" >
-      <Header />
-     
-        <Routes>
-          <Route 
-            exact path="/portfolio-react/" 
-            element={<About />}
-            // component={About}
-          />
-          <Route 
-            exact path="/portfolio-react/about" 
-            element={<About />}
-            // component={About}
-          />
-          <Route 
-            exact path="/portfolio-react/portfolio" 
-            element={<Portfolio />}
-            // component={Portfolio}
-          />
-          <Route 
-            exact path="/portfolio-react/contact" 
-            element={<Contact />}
-            // component={Contact}
-          />
-          <Route 
-            exact path="/portfolio-react/resume" 
-            element={<Resume />}
-            // component={Resume}
-          />
-          {/* <Route path="/portfolio-react/about" element={<About />} /> */}
-          {/* <Route path="/portfolio-react/about" element={<About/>} /> */}
-          {/* <Route path="/portfolio-react/portfolio" element={<Portfolio/>} /> */}
-          {/* <Route path="/portfolio-react/contact" element={<Contact/>} /> */}
-          {/* <Route path="/portfolio-react/resume" element={<Resume/>} /> */}
-        </Routes>
-      <Footer />
-      </div>
-
-    </Router>
+    <>
+      <Router>
+          <Header />
+          <Routes>
+            <Route exact path="/portfolio-react/" element={<About />} />
+            <Route exact path="/portfolio-react/#about" element={<About />} />
+            <Route exact path="/portfolio-react/#portfolio" element={<Portfolio />} />
+            <Route exact path="/portfolio-react/#contact" element={<Contact />} />
+            <Route exact path="/portfolio-react/#resume" element={<Resume />} />
+          </Routes>
+        <Footer />
+      </Router>
+    </>
   );
 }
 

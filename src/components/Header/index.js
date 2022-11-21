@@ -6,19 +6,19 @@ const Header = () => {
     <div>
       <nav id="navbar">
 
-        <Link to={`/portfolio-react/about`}>
+        <Link to={`/portfolio-react/#about`}>
           About
         </Link>
 
-        <Link to={`/portfolio-react/portfolio`}>
+        <Link to={`/portfolio-react/#portfolio`}>
           Portfolio
         </Link>
 
-        <Link to={`/portfolio-react/contact`}>
+        <Link to={`/portfolio-react/#contact`}>
           Contact
         </Link>
 
-        <Link to={`/portfolio-react/resume`}>
+        <Link to={`/portfolio-react/#resume`}>
           Resume
         </Link>
 
